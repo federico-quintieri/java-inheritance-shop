@@ -33,4 +33,17 @@ public class Cuffia extends Prodotto {
     public void setWireless(boolean wireless) {
         this.wireless = wireless;
     }
+
+     // Override di metodi
+     @Override
+     public String toString() {
+         return "Cuffie{" +
+                 "nome='" + getNome() + '\'' +
+                 ", marca='" + getMarca() + '\'' +
+                 ", prezzo=" + getPrezzo() +
+                 ", iva=" + getIva() +
+                 ", colore='" + colore + '\'' +
+                 ", wireless=" + wireless  +
+                 '}';
+     }
 }

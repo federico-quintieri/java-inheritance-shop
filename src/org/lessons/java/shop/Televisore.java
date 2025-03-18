@@ -31,4 +31,16 @@ public class Televisore extends Prodotto {
     public boolean getSmart() {
         return this.smart;
     }
+     // Override di metodi
+     @Override
+     public String toString() {
+         return "Televisore{" +
+                 "nome='" + getNome() + '\'' +
+                 ", marca='" + getMarca() + '\'' +
+                 ", prezzo=" + getPrezzo() +
+                 ", iva=" + getIva() +
+                 ", pollici='" + pollici + '\'' +
+                 ", smart=" + smart +
+                 '}';
+     }
 }
